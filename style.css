@@ -1,0 +1,1015 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: "Korataki";
+  src: url("./fonts/Korataki.eot");
+  src: url("./fonts/Korataki.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Korataki.woff2") format("woff2"),
+    url("./fonts/Korataki.woff") format("woff"),
+    url("./fonts/Korataki.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Korataki";
+  src: url("./fonts/Korataki-Book.eot");
+  src: url("./fonts/Korataki-Book.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Korataki-Book.woff2") format("woff2"),
+    url("./fonts/Korataki-Book.woff") format("woff"),
+    url("./fonts/Korataki-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Korataki";
+  src: url("./fonts/Korataki-Bold.eot");
+  src: url("./fonts/Korataki-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Korataki-Bold.woff2") format("woff2"),
+    url("./fonts/Korataki-Bold.woff") format("woff"),
+    url("./fonts/Korataki-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Black.eot");
+  src: url("./fonts/Lato-Black.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Black.woff2") format("woff2"),
+    url("./fonts/Lato-Black.woff") format("woff"),
+    url("./fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-ExtraBold.eot");
+  src: url("./fonts/Lato-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-ExtraBold.woff2") format("woff2"),
+    url("./fonts/Lato-ExtraBold.woff") format("woff"),
+    url("./fonts/Lato-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Bold.eot");
+  src: url("./fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Bold.woff2") format("woff2"),
+    url("./fonts/Lato-Bold.woff") format("woff"),
+    url("./fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Light.eot");
+  src: url("./fonts/Lato-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Light.woff2") format("woff2"),
+    url("./fonts/Lato-Light.woff") format("woff"),
+    url("./fonts/Lato-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-SemiBold.eot");
+  src: url("./fonts/Lato-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-SemiBold.woff2") format("woff2"),
+    url("./fonts/Lato-SemiBold.woff") format("woff"),
+    url("./fonts/Lato-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Regular.eot");
+  src: url("./fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Regular.woff2") format("woff2"),
+    url("./fonts/Lato-Regular.woff") format("woff"),
+    url("./fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-ExtraLight.eot");
+  src: url("./fonts/Lato-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-ExtraLight.woff2") format("woff2"),
+    url("./fonts/Lato-ExtraLight.woff") format("woff"),
+    url("./fonts/Lato-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Medium.eot");
+  src: url("./fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Medium.woff2") format("woff2"),
+    url("./fonts/Lato-Medium.woff") format("woff"),
+    url("./fonts/Lato-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato-Thin.eot");
+  src: url("./fonts/Lato-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Lato-Thin.woff2") format("woff2"),
+    url("./fonts/Lato-Thin.woff") format("woff"),
+    url("./fonts/Lato-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.eot");
+  src: url("./fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.eot");
+  src: url("./fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Базовые стили (для десктопов 1920px) */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.bgrBlack {
+  background-color: #231815;
+}
+/*header */
+.header__wrapper_top {
+  padding: 12px 0;
+  display: flex;
+  gap: 70px;
+  justify-content: flex-end;
+}
+.link {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.header__wrapper_bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  align-items: center;
+}
+.header__links__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+  margin-right: 132.5px;
+}
+.header__link {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.header__block__wrapper {
+  max-width: 328px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  max-width: 217px;
+  cursor: pointer;
+}
+.input__wrapper {
+  position: relative;
+  max-width: 170px;
+}
+.header__search {
+  max-width: 170px;
+  border: 1px solid #f5f5f5;
+  height: 39px;
+  border-radius: 88.64px;
+  padding: 11px 21px 12px;
+  color: #231815;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+}
+.search {
+  position: absolute;
+  right: 13.73px;
+  bottom: 8.86px;
+  cursor: pointer;
+}
+.header__button {
+  max-width: 138px;
+  height: 39px;
+  padding: 11.5px 19.17px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  vertical-align: middle;
+  border: 1px solid 000000;
+  border-radius: 100px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.bag__wrapper {
+  position: relative;
+}
+.counter {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  vertical-align: middle;
+  top: 0;
+  right: -2px;
+  color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-text {
+  display: none;
+}
+.burger-menu {
+  display: none;
+}
+/*section main*/
+.main {
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.h2 {
+  color: #231815;
+  font-family: "Korataki";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 140%;
+  vertical-align: middle;
+}
+.products__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+}
+.card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  border-radius: 20px;
+  max-width: 320px;
+  height: 477px;
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+}
+.card__img {
+  max-width: 320px;
+  height: 477px;
+}
+.sale {
+  max-width: 126px;
+  height: 38px;
+  background-color: #231815;
+  padding: 8px 39.5px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: middle;
+  border-radius: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.3s ease;
+  border-radius: 0 0 20px 20px;
+  max-width: 320px;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.7);
+}
+.card:hover .card-bottom {
+  opacity: 1;
+  visibility: visible;
+}
+.btn__detail {
+  max-width: 258;
+  height: 48;
+  padding: 13px 86.5px;
+  background-color: rgba(228, 83, 2, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: middle;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: start;
+}
+.card__name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  vertical-align: middle;
+  color: rgba(35, 24, 21, 1);
+}
+.card__price__wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.card__price-new {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(228, 83, 2, 1);
+}
+.card__price-old {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 1);
+}
+.card__price-usual {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(35, 24, 21, 1);
+}
+.card__price-new__currency {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(228, 83, 2, 1);
+}
+.card__price-old__currency {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(128, 128, 128, 1);
+}
+.card__price-usual__currency {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(35, 24, 21, 1);
+}
+.show390 {
+  display: none;
+}
+.sale390 {
+  display: none;
+}
+/*FOOTER*/
+.footer {
+  background-color: rgba(12, 12, 12, 1);
+  padding: 61px 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  display: flex;
+  justify-content: start;
+  gap: 109px;
+}
+.column__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 52.9px;
+}
+.footer-logo {
+  max-width: 239px;
+  width: 100%;
+}
+.footer-logo__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  vertical-align: middle;
+  color: rgba(128, 128, 128, 1);
+  max-width: 322px;
+}
+.footer-politik__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  vertical-align: middle;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: rgba(128, 128, 128, 1);
+  cursor: pointer;
+}
+.footer__middle__wrapper {
+  display: flex;
+  gap: 149px;
+  justify-content: start;
+}
+.column__address-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.address__block,
+.contacts__block,
+.services__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 246px;
+  width: 100%;
+}
+.footer__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  vertical-align: middle;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+.footer__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+}
+.footer__text_address {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  vertical-align: middle;
+  color: rgba(245, 245, 245, 1);
+}
+.contacts__block__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 246px;
+  width: 100%;
+}
+.services__block__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 74px;
+}
+.footer__right__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  max-width: 242px;
+  width: 100%;
+}
+.icons__wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 33px;
+}
+.footer__link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(128, 128, 128, 1);
+  cursor: pointer;
+}
+.footer__icon-mc {
+  max-width: 48.33px;
+  height: 29px;
+}
+.footer__icon-mir {
+  max-width: 46px;
+  height: 13px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+.footer__icon-visa {
+  max-width: 45px;
+  height: 14px;
+  margin-bottom: 4px;
+}
+.email,
+.phone {
+  cursor: pointer;
+}
+.show-footer-text {
+  display: none;
+}
+/*адаптивы*/
+/* 1919px - 1600px */
+@media (max-width: 1919px) {
+  .container {
+    max-width: 1240px;
+  }
+  .header__block__wrapper {
+    max-width: 200px;
+    width: 100%;
+    gap: 23px;
+    justify-content: flex-end;
+  }
+  .header__links__wrapper {
+    margin-right: 180.5px;
+  }
+  .main {
+    padding-bottom: 66px;
+  }
+  .h2 {
+    font-size: 40px;
+  }
+  .products__wrapper {
+    column-gap: 29px;
+    row-gap: 30px;
+  }
+  .card,
+  .card__img {
+    max-width: 288px;
+    height: 429px;
+  }
+  .footer__middle__wrapper {
+    gap: 82px;
+  }
+  .footer__left {
+    gap: 70px;
+  }
+  .column__logo {
+    gap: 55.6px;
+  }
+  .footer-logo {
+    max-width: 217px;
+    width: 100%;
+    margin-top: 3px;
+  }
+  .show-text,
+  .show-element {
+    display: block;
+  }
+  .default-text,
+  .default-search {
+    display: none;
+  }
+  .input__wrapper {
+    position: relative;
+    width: 39px;
+    height: 39px;
+    border-radius: 88.64px;
+    background-color: rgba(35, 24, 21, 1);
+    cursor: pointer;
+  }
+  .header__search {
+    display: none;
+  }
+  .search {
+    position: absolute;
+    right: 8.86px;
+    bottom: 8.86px;
+    cursor: pointer;
+    width: 21.27px;
+    height: 21.27px;
+  }
+  .footer {
+    padding: 64px 0;
+  }
+}
+/* 1599px - 770px */
+@media (max-width: 1599px) {
+  .container {
+    max-width: 680px;
+  }
+  .header__wrapper_top,
+  .header__links__wrapper,
+  .input__wrapper,
+  .header__button {
+    display: none;
+  }
+  .header__wrapper_bottom {
+    padding: 12px 0;
+  }
+  .logo {
+    max-width: 141.32px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .burger {
+    width: 40px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+  }
+  .main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .products__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+  .card,
+  .card__img {
+    max-width: 320px;
+    height: 476px;
+    width: 100%;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__left {
+    flex-direction: column;
+    gap: 33.23px;
+  }
+  .footer-logo {
+    max-width: 180px;
+    margin-top: -3px;
+  }
+  .footer__middle__wrapper {
+    flex-direction: row;
+    gap: 42px;
+  }
+  .address__block {
+    flex-direction: column;
+  }
+  .column__address-contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .services__block__wrapper {
+    gap: 30px;
+  }
+  .footer__text_address {
+    width: 210px;
+  }
+  .services__block {
+    max-width: 140px;
+  }
+  .footer__right {
+    gap: 81px;
+  }
+  .footer__right__text {
+    margin-top: -140px;
+    align-items: flex-start;
+  }
+  .footer__right__icons {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icons__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 33px;
+  }
+  .default-footer-text {
+    display: none;
+  }
+  .show-footer-text {
+    display: block;
+    max-width: 382px;
+    width: 100%;
+  }
+  .show-text {
+    display: none;
+  }
+  .default-text {
+    display: block;
+  }
+  .footer__icon-mir {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .footer__icon-visa {
+    margin-right: 2px;
+    margin-bottom: 0;
+  }
+  .show390 {
+    display: none;
+  }
+}
+/* 769px - 390px */
+@media (max-width: 769px) {
+  .container {
+    max-width: 320px;
+  }
+  .header__wrapper_bottom {
+    padding: 10px 0;
+  }
+  .main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .h2 {
+    font-size: 24px;
+    max-width: 229px;
+  }
+  .products__wrapper {
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 24px;
+  }
+  .card__item:nth-child(7) {
+    order: 8;
+  }
+  .card__item:nth-child(8) {
+    order: 7;
+  }
+  .card__item {
+    gap: 10px;
+  }
+  .card,
+  .card__img {
+    max-width: 155px;
+    height: 230px;
+  }
+  .sale {
+    display: none;
+  }
+  .card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+  .card__text {
+    gap: 11px;
+  }
+  .card__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    vertical-align: middle;
+  }
+  .card__price-new {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    vertical-align: middle;
+    display: flex;
+    gap: 2.43px;
+    align-items: center;
+  }
+  .card__price-old {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    vertical-align: middle;
+    text-decoration: line-through;
+    display: flex;
+    gap: 2.43px;
+    align-items: center;
+  }
+  .card__price-usual {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    vertical-align: middle;
+    display: flex;
+    gap: 2.43px;
+    align-items: center;
+  }
+  .card__price-usual__currency {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    vertical-align: middle;
+  }
+  .card__price-new__currency {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    vertical-align: middle;
+  }
+  .card__price-old__currency {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    vertical-align: middle;
+    text-decoration: line-through;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer__middle__wrapper {
+    flex-direction: column;
+  }
+  .column__address-contacts {
+    flex-direction: column;
+  }
+  .footer__right__text {
+    margin-top: 0;
+  }
+  .footer__right__icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__left {
+    gap: 34.23px;
+  }
+  .address__block,
+  .contacts__block {
+    gap: 10px;
+  }
+  .column__address-contacts,
+  .footer__middle__wrapper {
+    gap: 30px;
+  }
+  .footer__right {
+    gap: 72px;
+  }
+  .footer__right__icons {
+    gap: 38px;
+  }
+  .show-footer-text {
+    max-width: 321px;
+  }
+  .card__price__wrapper {
+    gap: 10px;
+  }
+  .sale,
+  .sale390 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70px;
+    width: 100%;
+    height: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 10px;
+  }
+  .d-none390 {
+    display: none;
+  }
+  .show390 {
+    display: block;
+  }
+  .services__block__wrapper {
+    gap: 20px;
+  }
+  .footer__right__icons {
+    gap: 30px;
+  }
+  .footer__icon-mir {
+    margin-left: 7px;
+    margin-bottom: 3px;
+  }
+  .footer__icon-visa {
+    margin-right: 0px;
+    margin-bottom: 3px;
+  }
+}
