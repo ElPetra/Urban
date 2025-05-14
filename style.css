@@ -651,6 +651,9 @@ input[type="reset"] {
 .show-text {
   display: none;
 }
+.show-element {
+  display: none;
+}
 /*адаптивы*/
 /* 1919px - 1600px */
 @media (max-width: 1919px) {
